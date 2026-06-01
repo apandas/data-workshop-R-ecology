@@ -1,29 +1,12 @@
-# Intro to Data Analysis and Visualization in R
+## Intro to Data Analysis and Visualization in R
 
-Using the Lesson template from the Carpentries, this repo holds customized material based on [Data Analysis and Visualization in R for Ecologists](https://datacarpentry.org/R-ecology-lesson/).
+This is an introduction to R designed for participants with no programming experience. The module begins with an overview of the R programming language and the RStudio interface. It then provides a guided exploration of data frames and common data-cleaning operations before discussing vectors and factors. Participants then learn how to load in data and are introduced to the flow of data operations using tidyverse, including how to combine operations to manipulate, analyze, and export data. The module finishes with practical exercises in visualizing data with ggplot2.
 
-## Contributing
+This module is based on The Carpentries' [Data Analysis and Visualization in R for Ecologists](https://datacarpentry.org/R-ecology-lesson/) lesson, and contains customized learning material. In this instructional module, we use Palmer Archipelago penguin data and incorporate research data management practices and data literacy topics.
 
-We welcome all contributions to improve the lesson! Maintainers will do their best to help you if you have any
-questions, concerns, or experience any difficulties along the way.
+This material is designed for use both as a module for instructors leading a training workshop and as a self-guided resource for individual review. The goal of this module is to teach researchers basic concepts, skills, and tools for working with data so they can accomplish more in less time and with less frustration. This module is designed for researchers interested in working with ecological data in R.
 
-We'd like to ask you to familiarize yourself with our [Contribution Guide](CONTRIBUTING.md) and have a look at
-the [more detailed guidelines][lesson-example] on proper formatting, ways to render the lesson locally, and even
-how to write new episodes.
-
-Please see the current list of [issues][FIXME] for ideas for contributing to this
-repository. For making your contribution, we use the GitHub flow, which is
-nicely explained in the chapter [Contributing to a Project](http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project) in Pro Git
-by Scott Chacon.
-Look for the tag ![good_first_issue](https://img.shields.io/badge/-good%20first%20issue-gold.svg). This indicates that the maintainers will welcome a pull request fixing this issue.  
-
-
-## Maintainer(s)
-
-Current maintainers of this lesson are 
-
-* [UCSB Carpentry](https://ucsbcarpentry.github.io/)
-
+This module was originally created in 2022 with the UCSB Carpentry organization. This repo is my personal copy of the module, forked from the original repository.
 
 ## Authors
 
@@ -34,3 +17,5 @@ A list of contributors to the lesson can be found in [AUTHORS](AUTHORS)
 To cite this lesson, please consult with [CITATION](CITATION)
 
 [lesson-example]: https://carpentries.github.io/lesson-example
+
+
