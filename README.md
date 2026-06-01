@@ -8,14 +8,4 @@ This material is designed for use both as a module for instructors leading a tra
 
 This module was originally created in 2022 with the UCSB Carpentry organization. This repo is my personal copy of the module, forked from the original repository.
 
-## Authors
-
-A list of contributors to the lesson can be found in [AUTHORS](AUTHORS)
-
-## Citation
-
-To cite this lesson, please consult with [CITATION](CITATION)
-
-[lesson-example]: https://carpentries.github.io/lesson-example
-
 
