@@ -1,5 +1,7 @@
 ## Intro to Data Analysis and Visualization in R
 
+Link to the module: [Home Page](https://carpentry.library.ucsb.edu/CustomDC-R/index.html)
+
 This is an introduction to R designed for participants with no programming experience. The module begins with an overview of the R programming language and the RStudio interface. It then provides a guided exploration of data frames and common data-cleaning operations before discussing vectors and factors. Participants then learn how to load in data and are introduced to the flow of data operations using tidyverse, including how to combine operations to manipulate, analyze, and export data. The module finishes with practical exercises in visualizing data with ggplot2.
 
 This module is based on The Carpentries' [Data Analysis and Visualization in R for Ecologists](https://datacarpentry.org/R-ecology-lesson/) lesson, and contains customized learning material. In this instructional module, we use Palmer Archipelago penguin data and incorporate research data management practices and data literacy topics.
