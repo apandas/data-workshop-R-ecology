@@ -1,6 +1,6 @@
 ## Intro to Data Analysis and Visualization in R
 
-Link to the module: [Home Page](https://carpentry.library.ucsb.edu/CustomDC-R/index.html)
+Link to the module: [Home Page](https://apandas.github.io/data-workshop-R-ecology/)
 
 This is an introduction to R designed for participants with no programming experience. The module begins with an overview of the R programming language and the RStudio interface. It then provides a guided exploration of data frames and common data-cleaning operations before discussing vectors and factors. Participants then learn how to load in data and are introduced to the flow of data operations using tidyverse, including how to combine operations to manipulate, analyze, and export data. The module finishes with practical exercises in visualizing data with ggplot2.
 
