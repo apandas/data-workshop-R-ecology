@@ -1,71 +1,68 @@
 ---
 title: Setup
 ---
-## Data Download
+<p>
+Estimated time: 30 mins, Updated July 2022
+</p>
 
-To install the released version of palmerpenguins from [CRAN](https://cran.r-project.org/):
-~~~
-install.packages("palmerpenguins")
-~~~
-{: .language-r}
+### Overview and Prerequisites
+<strong>R</strong> and <strong>RStudio</strong> are two separate pieces of software:
+<br>
+<strong>R</strong> is a programming language that is especially powerful for data exploration, visualization, and statistical analysis.<br>
+<strong>RStudio</strong> is an integrated development environment (IDE) that makes using R easier. In this course we use RStudio to interact with R.<br>
+This page contains the set of instructions to be completed before beginning the module. By the end of these setup steps, you will have:
 
-Data Citation:
+The R programming language installed <br>
+RStudio installed and accessible on your computer <br>
+The R packages required for this module <br>
+The sample data required for this module <br>
+{: .checklist}
 
-Horst AM, Hill AP, Gorman KB (2020). palmerpenguins: Palmer
-Archipelago (Antarctica) penguin data. R package version 0.1.0.
-https://allisonhorst.github.io/palmerpenguins/
+### 1. Install R and RStudio
 
-## Install R and RStudio
-R and RStudio are two separate pieces of software:
+> ## Windows
+> <strong>1a.</strong> Download the R installer for Windows from the [CRAN website](https://cran.rstudio.com/bin/windows/){:target="__blank"}. The latest version you should select is <strong>4.2.2</strong>.<br>
+> <strong>1b.</strong> Double click the installer file, `R-4.2.2.exe`, in your downloads folder. R will be installed after this exe program runs.<br>
+> <strong>1c.</strong> Go to the [RStudio download page](https://posit.co/download/rstudio-desktop).<br>
+> <strong>1d.</strong> Under <strong>All Installers and Tarballs</strong>, locate and download the RStudio Installer for <strong>Windows</strong>.<br>
+> <strong>1e.</strong> Double click the installer file, `RSTUDIO-2022.07.1+554.exe`, in your downloads folder. Use default settings while running the installer.<br>
+> <strong>1f.</strong> Once RStudio is installed, open RStudio.<br>
+{: .solution}
 
-R is a programming language that is especially powerful for data exploration, visualization, and statistical analysis
-RStudio is an integrated development environment (IDE) that makes using R easier. In this course we use RStudio to interact with R.
-If you don’t already have R and RStudio installed, follow the instructions for your operating system below. You have to install R before you install RStudio.
+> ## MacOS
+> <strong>1a.</strong> Download the R installer for macOS from the [CRAN website](https://cran.rstudio.com/bin/macosx/){:target="__blank"}. The latest version you should select is <strong>4.2.2</strong>.<br>
+> <strong>1b.</strong> Double click the installer file, `R-4.2.2.pkg`, in your downloads folder. R will be installed after this pkg program runs.<br>
+> <strong>1c.</strong> Download the XQuartz installer for macOS from the [XQuartz website](https://www.xquartz.org/){:target="__blank"}. The latest version you should select is <strong>2.8.4</strong>.<br>
+> <strong>1d.</strong> Double click the installer file, `XQuartz-2.8.4.pkg`, in your downloads folder. Use default settings while running the installer.<br>
+> <strong>1e.</strong> Go to the [RStudio download page](https://posit.co/download/rstudio-desktop){:target="__blank"}.<br>
+> <strong>1f.</strong> Under <strong>All Installers and Tarballs</strong>, locate and download the RStudio Installer for <strong>macOS</strong>.<br>
+> <strong>1g.</strong> Double click the installer file, `RSTUDIO-2022.07.1+554.pkg`, in your downloads folder. Use default settings while running the installer.<br>
+> <strong>1h.</strong> Once RStudio is installed, open RStudio.<br>
+{: .solution}
 
-#### Windows
-Download R from the CRAN website.
-Run the .exe file that was just downloaded
-Go to the RStudio download page
-Under All Installers, download the RStudio Installer for Windows.
-Double click the file to install it
-Once it’s installed, open RStudio to make sure it works and you don’t get any error messages.
-#### MacOS
-Download R from the CRAN website.
-Select the .pkg file for the latest R version
-Double click on the downloaded file to install R
-It is also a good idea to install XQuartz (needed by some packages)
-Go to the RStudio download page
-Under All Installers, download the RStudio Installer for MacOS.
-Double click the file to install RStudio
-Once it’s installed, open RStudio to make sure it works and you don’t get any error messages.
-#### Linux
-Follow the instructions for your distribution from CRAN, they provide information to get the most recent version of R for common distributions. For most distributions, you could use your package manager (e.g., for Debian/Ubuntu run sudo apt-get install r-base, and for Fedora sudo yum install R), but we don’t recommend this approach as the versions provided by this are usually out of date. In any case, make sure you have at least R 3.3.1.
-Go to the RStudio download page
-Under All Installers, select the version that matches your distribution and install it with your preferred method (e.g., with Debian/Ubuntu sudo dpkg -i rstudio-YYYY.MM.X-ZZZ-amd64.deb at the terminal).
-Once it’s installed, open RStudio to make sure it works and you don’t get any error messages.
+> ## Linux
+> <strong>1a.</strong> Follow the instructions for your distribution on the [CRAN website](https://cran.r-project.org/){:target="__blank"}, they provide information on how to get the most recent version of R. The latest version you should select is <strong>4.2.2</strong>.<br>
+> <strong>⚠</strong> For most distributions, we <strong>do not</strong> recommend using your package manager. The versions provided by this method are usually out of date.<br>
+> <strong>1b.</strong> Go to the [RStudio download page](https://posit.co/download/rstudio-desktop){:target="__blank"}.<br>
+> <strong>1c.</strong> Under <strong>All Installers and Tarballs</strong>, locate and download the RStudio Installer for your distribution.<br>
+> <strong>1d.</strong> Install RStudio with your preferred method (such as, with Debian/Ubuntu `sudo dpkg -i rstudio-YYYY.MM.X-ZZZ-amd64.deb`).<br>
+> <strong>1e.</strong> Once RStudio is installed, open RStudio.<br>
+{: .solution}
 
-## Update R and RStudio
-If you already have R and RStudio installed, first check if your R version is up to date:
+### 2. Install required R packages
+During the course we will need a number of R packages. Packages contain useful R code written by other people. We will use the packages tidyverse, hexbin, patchwork, and RSQLite.<br>
 
-When you open RStudio your R version will be printed in the console on the bottom left. Alternatively, you can type sessionInfo() into the console. If your R version is 4.0.0 or later, you don’t need to update R for this lesson. If your version of R is older than that, download and install the latest version of R from the R project website for Windows, for MacOS, or for Linux
-It is not necessary to remove old versions of R from your system, but if you wish to do so you can check How do I uninstall R?
-Note: The changes introduced by new R versions are usually backwards-compatible. That is, your old code should still work after updating your R version. However, if breaking changes happen, it is useful to know that you can have multiple versions of R installed in parallel and that you can switch between them in RStudio by going to Tools > Global Options > General > Basic.
-After installing a new version of R, you will have to reinstall all your packages with the new version. For Windows, there is a package called installr that can help you with upgrading your R version and migrate your package library.
-To update RStudio to the latest version, open RStudio and click on Help > Check for Updates. If a new version is available follow the instruction on screen. By default, RStudio will also automatically notify you of new versions every once in a while.
+<strong>2a.</strong> To install these packages, navigate to your RStudio interface. Click inside the <strong>console</strong> window, you should see a blinking cursor.<br>
 
-## Install required R packages
-During the course we will need a number of R packages. Packages contain useful R code written by other people. We will use the packages tidyverse, hexbin, patchwork, and RSQLite.
+![RStudio interface with labeled panels](assets/img/rstudio_panes.png)<br>
 
-To try to install these packages, open RStudio and copy and paste the following command into the console window (look for a blinking cursor on the bottom left), then press the Enter (Windows and Linux) or Return (MacOS) to execute the command.
-
+<strong>2b.</strong> Type the following line into your console and press <strong>Enter</strong> or <strong>Return</strong>:
 ~~~
 install.packages(c("tidyverse", "hexbin", "patchwork", "RSQLite"))
 ~~~
 {: .language-r}
-
-Alternatively, you can install the packages using RStudio’s graphical user interface by going to Tools > Install Packages and typing the names of the packages separated by a comma.
-
-R tries to download and install the packages on your machine. When the installation has finished, you can try to load the packages by pasting the following code into the console:
+<br>
+<strong>2c.</strong> The `install.packages` command will have installed the list of R packages we gave it. Load the R packages into your environment by typing the following line into your console. Press <strong>Enter</strong> or <strong>Return</strong>:
 ~~~
 library(tidyverse)
 library(hexbin)
@@ -73,12 +70,27 @@ library(patchwork)
 library(RSQLite)
 ~~~
 {: .language-r}
+<br>
 
-If you do not see an error like there is no package called ‘...’ you are good to go!
+It is recommended to keep your R version and all packages up to date. New versions bring improvements and important bugfixes. <br>
+To update R packages, navigate to the menu located at the top of your RStudio interface. Click <strong>Tools</strong> > <strong>Check for Package Updates....</strong>.<br>
+{: .callout}
 
-## Updating R packages
-Generally, it is recommended to keep your R version and all packages up to date, because new versions bring improvements and important bugfixes. To update the packages that you have installed, click Update in the Packages tab in the bottom right panel of RStudio, or go to Tools > Check for Package Updates....
+### 3. Data Download
 
-Sometimes, package updates introduce changes that break your old code, which can be very frustrating. To avoid this problem, you can use a package called renv. It locks the package versions you have used for a given project and makes it straightforward to reinstall those exact package version in a new environment, for example after updating your R version or on another computer. However, the details are outside of the scope of this lesson.
+This module uses an instructional dataset, palmerpenguins from [CRAN](https://cran.r-project.org/){:target="__blank"}. To download the data this module uses, run the following lines in your console:
+~~~
+install.packages("palmerpenguins")
+~~~
+{: .language-r}
+~~~
+library(palmerpenguins)
+~~~
+{: .language-r}
+Data Citation:
+
+Horst AM, Hill AP, Gorman KB (2020). palmerpenguins: Palmer <br>
+Archipelago (Antarctica) penguin data. R package version 0.1.0. <br>
+https://allisonhorst.github.io/palmerpenguins/
 
 {% include links.md %}
